@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selectores generales */
+
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #F0F0F0;
+}
+
+a, p, small, h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #FFF;
+}
+
+a {
+  color: #F0F0F0;
+  text-decoration: none;
+}
+
+small {
+  color: #be3144;
+}
+
+header {
+  background-color: #be3144;
+}
+
+
+/* Otras selecciones */
+
+/*------------- Estilos Nav ---------------*/
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+.nav {
+  display: flex;
+  justify-content: end;
+  padding-right: 2rem;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  color: #F0F0F0;
+  font-size: 22px;
+}
+
+.nav__links a{
+  display: block;
+  padding: 1.5rem;
+}
+
+.nav__links a:hover {
+  background-color: #45567d;
+}
+
+/*----------- Estilos About -------------*/
+
+.about {
+  height: 100vh;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about > h1 {
+  font-size: 3.75rem;
+}
+
+.about > small {
+  font-size: 1.9rem;
+  font-style: italic;
+  font-weight: 200;
+}
+
+/*----------- Estilos Work Projects -------------*/
+
+#work {
+  background-color: #45567d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 6rem 0 4rem;
+}
+
+.work__title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.work__title > span {
+  padding: .5rem 1rem;
+  border-bottom: 2px solid #FFF;
+}
+
+#work__projects {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.2rem;
+}
+
+.project {
+  background-color: #303841;
+}
+
+.project > p {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 1.2rem;
+}
+
+.project > p > span {
+  color: #ff7f50;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.project > img {
+  width: 100%;
+}
+
+.project_link:hover .code {
+  opacity: 1;
+}
+
+.btn-show {
+  background-color: #303841;
+  padding: .6rem 1rem .6rem 1.4rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  transition: all .5s;
+}
+
+.btn-show > span {
+  transition: all .5s;
+}
+
+.btn-show:hover {
+  background-color: #be3144;
+}
+
+.btn-show:hover > span {
+  transform: translateX(2px);
+}
+
+/*------------- Contact Styles ---------------*/
+
+#contact {
+  background-color: #303841;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.contact__title {
+  font-size: 4rem;
+}
+
+.contact__sub {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.contact__icons {
+  padding: 3rem 0;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.contact__icons li a{
+  display: flex;
+  gap: .4rem;
+  align-items: center;
+}
+
+
+/*------------------- Footer Style -------------------*/
+
+footer {
+  background-color: #303841;
+  display: flex;
+  padding: 2.5rem 0;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 300;
+  border-top: 4px solid #be3144;
+}
+
+footer > p:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
